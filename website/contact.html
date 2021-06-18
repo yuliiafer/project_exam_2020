@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Contact form with validator js">
+        <title>Contact form</title>
+        <link rel="stylesheet" href="./css/master.css" />
+        <link rel="stylesheet" href="./css/menu.css" />
+        <link href="images/logo1.png" rel="shortcut icon" type="image/x-icon">
+    </head>
+    <body>
+        <header class="header">
+            <div class="burgermenu">
+                <a href="index.html" class="logo-home">
+                    <img class="menu-logo-space" src="images/logo1.png" alt="space logo">
+                </a>
+                <img class="menu" src="images/menu-white.png" alt="menu-icon">
+                <nav class="menu-nav">
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="nasa.html">
+                                NASA
+                            </a>
+                        </li>
+                        <li>
+                            <a href="spacex.html">
+                                SpaceX
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Contacts
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu-mobile">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="nasa.html">
+                                NASA
+                            </a>
+                        </li>
+                        <li>
+                            <a href="spacex.html">
+                                SpaceX
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Contacts
+                            </a>
+                        </li> 
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="main-info-contact">
+                <h1>
+                    Contact
+                </h1>
+                <div class="planet">
+                    <img class="planet" src="images/planet-contact.png" alt="earth">
+                </div>
+                <h2 class="textContact">
+                    Hi!
+                </h2>
+                <p class="textContact">
+                     If you have any questions
+                    </p>
+                <p class="textContact">
+                      or just curious about something,
+                </p>
+                <p class="textContact">
+                    you can easy just ask us
+                </p>
+                <p class="textContact">
+                    by writing your question bellow.
+                </p>
+                <h3 class="textContact">
+                    We will be happy to answer all your questions shortly.
+                </h3>
+                <form class="contactForm" action="https://julia.av.ferreira@gmail.com" method="post">
+                    <div class="form-group">
+                        <input class="form-control" name="firstName" id="firstName" placeholder="First name &ast;">
+                        <div class="form-error" id="firstNameError">
+                            Write your first name 
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" name="lastName" id="lastName" placeholder="Last name &ast;">
+                        <div class="form-error" id="lastNameError">
+                            Write your last name
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" name="email" id="email" placeholder="Email &ast;">
+                        <div class="form-error" id="emailError">
+                            Write your email address
+                        </div>
+                        <div class="form-error" id="invalidEmailError">
+                            Please enter a valid email address
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" name="message" id="message" placeholder="Your Message is here &ast;">
+
+                        </textarea>
+                        <div class="form-error" id="messageError">
+                            You must to write at least 10 characters.
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submit">
+                        Send
+                    </button>   
+                </form> 
+            </div>
+        </main>
+    <section>
+        <h3 class="textContact">
+            Here you can find where are NASA and SpaceX on the map
+        </h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d34052554.62068282!2d-106.42216728548117!3d31.35697664935933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1snasa%20spacex!5e1!3m2!1sen!2sno!4v1590156549071!5m2!1sen!2sno">
+        </iframe>
+    </section>     
+
+    <footer>
+        <p class="footer">
+            &copy; 2020 Yuliia Ferreira
+        </p> 
+    </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

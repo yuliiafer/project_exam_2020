@@ -1,0 +1,93 @@
+h4 {
+    font-size: 30px;
+}
+h4,
+p {
+    text-align: center;
+}
+h6 {
+    font-size: 12px;
+    font-style: italic;
+    text-align: right;
+}
+.nasa-main {
+    width: 1000px;
+    margin: 0 auto;
+}
+.card-api {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    margin-bottom: 30px;
+}
+.name {
+    font-size: 20px;
+    color: #ffffff;
+}
+.image-api,
+.description {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+}
+.products-api,
+.divclass-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.products-api > div {
+    width: 300px;
+    margin: 5px;
+    background: #0A0A0A;
+    padding: 10px;
+}
+.products-api > div .image-api {
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+}
+.api > .image-api,
+.nasa > .image-nasa {
+    width: 1000px;
+}
+.api > .detls,
+.nasa > .image-nasa {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.nasa-logo {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+}
+.details-image p {
+    width: 900px;
+    margin: 0 auto;
+}
+@media (max-width : 1200px) {
+    html,
+    body {
+        width: 100%;
+    }
+    .card-api {
+        flex: 1 1 auto;
+}
+}
+@media (max-width : 800px) {
+    body {
+        padding: 0;
+    }
+    .products-api > div {
+        margin: 1px;
+        padding: 0;
+    }
+}
+@media (min-width: 1100px) {
+    .card-api {
+        flex: 1 1;
+    }
+}
